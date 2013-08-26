@@ -1,0 +1,18 @@
+1.How to Install go on ubuntu
+
+sudo﻿ add-apt-repository ppa:gophers/go
+sudo apt-get update
+sudo apt-get install golang
+
+gccgo安装 gccgo似乎是从4.6开始支持的。也就是说，要在ubuntu用命令安装gccgo只有ubuntu 11.10包括且以上的版本。
+大家可以试一下命令
+
+gcc -v
+
+，查看
+
+--enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin 
+
+如果有一个go，说明你的gcc支持golang，那么就执行以下命令安装gcc-go(大家试一下这命令，我不敢确定)：
+
+sudo apt-get install gccgo
